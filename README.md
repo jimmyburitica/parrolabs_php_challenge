@@ -15,30 +15,29 @@ For this challenge, I used the following software:
 
 ## How to Setup
 
-1. Clone GitHub repo for this project locally
-2. Install Composer Dependencies
+1. Clone GitHub repo for this project locally.
+2. Install Composer Dependencies.
 ```
 composer install
 ```
 
-3. Install NPM Dependencies
+3. Install NPM Dependencies.
 ```
 npm install
 ```
 
-4. Create .env file
-Make a copy of the .env.example file and create a .env
+4. Create .env file. Make a copy of the .env.example file and create a .env
 ```
 cp .env.example .env
 ```
 
-5. Generate an app encryption key
+5. Generate an app encryption key.
 ```
 php artisan key:generate
 ```
 
-6. Create an empty database for the application
-7. In the .env file, add database information to allow Laravel to connect to the database
+6. Create an empty database for the application.
+7. In the .env file, add database information to allow Laravel to connect to the database.
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -48,14 +47,12 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-8. Migrate the database
-Once your credentials are in the .env file, now you can migrate your database.
+8. Migrate the database. Once your credentials are in the .env file, now you can migrate your database.
 ```
 php artisan migrate
 ```
 
-9. Seed the database (Optional)
-Fills your database with starter data.
+9. Seed the database (Optional). Fills your database with starter data.
 ```
 php artisan db:seed
 ```
